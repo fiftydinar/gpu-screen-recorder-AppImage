@@ -20,7 +20,7 @@ ln -sfn "$APPDIR"/share /tmp/._gsr
 
 # gsr needs capabilities, so this ugly hack is needed for that
 # TODO detect when /tmp is mounted with nonsuid and look for another place
-WORKAROUND_PATH="/tmp/.gsr-appimage-hack"
+WORKAROUND_PATH="$HOME/.cache/.gsr-appimage-hack"
 mkdir -p "$WORKAROUND_PATH"/bin
 
 # hack to get capabities working
